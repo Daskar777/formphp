@@ -1,3 +1,48 @@
+body {
+    background-color: black;
+}
+.container_wrap {
+    display: flex;
+    justify-content: center;
+}
+#container1 {
+    display: none;
+}
+.container {
+    background-color: silver;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20%;
+} input {
+    border-radius: 5px;
+    border: 0;
+    height: 20px;
+  }
+.container p {
+    display: flex;
+    justify-content: space-between;
+}.container span {
+    margin-right: 4px;
+ }
 #nameInput {
-    color: #ffffff;
+    color: #ffffff;}
+.green_but {
+    background-color: greenyellow;
+    display: flex;
+    text-align: center;
+    height: 35px;
+    width: 160px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.secure_q {
+    width: 50px;
+}
+#cancelBut {
+    background-color: red;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
 }
