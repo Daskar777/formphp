@@ -3,7 +3,7 @@
 
 <?php
     if (htmlspecialchars($_POST['name']) === "Daskar"){
-        echo 'Даскар ми ждали тебя';
+        echo 'Даскар мы ждали тебя';
 };
 //mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 //$mysqli = new mysqli("localhost", "root", "jgQpjtVV", "datebase1");

@@ -1,0 +1,35 @@
+
+
+
+
+CREATE DATABASE <name of database>;
+creating a database(створення бази данних)
+
+DROP DATABASE <some database name>;
+deleting database(видалення бази данних)
+
+
+USE <database name>;
+
+
+CREATE TABLE <database name> (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT,
+  user_name CHAR(128),
+  user_age INT,
+  skills CHAR(128),
+  cloud TINYINT DEFAULT 0
+);
+
+insert into user_info set user_id = 1, user_name = 'Daskar', user_age = 33, skills = 'web developer';
+
+
+
+
+                     Php part
+$link = mysqli_connect("localhost", "root", "jgQpjtVV", "users_base");	// подключение к базе данных				 
+$registerQuery = 'insert into <название таблицы> set <имя столбца1> = <значение2>, <имя столбца2> = <значение2>'; // добавление записей в таблицу
+наприклад 
+	$registerQuery = 'INSERT into user_info SET name = ' .$_POST['name'] .', password = ' .$_POST['password'].';';
+	
+	

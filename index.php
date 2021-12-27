@@ -23,7 +23,7 @@
             <p><span>login:</span> <input type="text" name="name" value="" class="iput_class" id="nameLogin"/></p>
             <p><span>password:</span> <input type="password" name="password" class="iput_class"/></p>
             <p><span>Calc please 1+4?</span> <input type="text" name="secure" class="iput_class secure_q"/></p>
-            <p><input type="submit" value="Login" id="loginButton" class="green_but" /><input type="button" value="New user" id="newUserBut" class="green_but"></p>
+            <p class="buttons_class"><input type="submit" value="Login" id="loginButton" class="green_but" /><input type="button" value="New user" id="newUserBut" class="green_but"></p>
         </form>
     </div>
 </div>
