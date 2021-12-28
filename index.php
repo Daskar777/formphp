@@ -10,12 +10,12 @@
 </head>
 <body>
 <div class="container_wrap">
-    <div class="container" id="container1">
+    <div class="container" id="reg_form">
         <form action="reg-user.php" method="post">
-            <p><span>Ваше имя:</span> <input type="text" name="name" value="" class="iput_class" id="nameInput"/></p>
+            <p><span>Ваше имя:</span> <input type="text" name="name" value="" class="" id="nameInput"/></p>
             <p><span>Ваш пароль:</span> <input type="password" name="password" class="iput_class"/></p>
             <p><span>Сколько будет 1+4?</span> <input type="text" name="secure" class="iput_class secure_q"/></p>
-            <p><input type="submit" value="Зарегистрировать" id="registerButton" class="green_but" /><input type="button" value="Отменить" id="cancelBut"></p>
+            <p><input type="submit" value="Зарегистрировать" id="registerButton" class="green_but" /><input type="button" value="Войти" id="cancelBut"></p>
         </form>
     </div>
     <div class="container" id="container2">
@@ -36,7 +36,7 @@
 <script>
 const nameInput = document.getElementById('nameInput'),
     cancelBut = document.getElementById('cancelBut'),
-    container1 = document.getElementById('container1'),
+    container1 = document.getElementById('reg_form'),
     newUserBut = document.getElementById('newUserBut'),
     container2 = document.getElementById('container2');
 nameInput.onfocus =() => {

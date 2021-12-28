@@ -39,7 +39,7 @@ $nameQuery = mysqli_query($link, $currentName);
 
 function calc($a){
     while ($row = mysqli_fetch_array($a)) {
-        if ($row['us_name'] == $_POST['name']){
+        if ($row['us_name'] == mb_strtolower($_POST['name'])){
             return true;
             break;
         }
@@ -52,7 +52,7 @@ if (calc($nameQuery) == true){
     echo 'Access-Denied<br>1+4 не ровно '.$_POST['secure'].'!<br>';
 } else {
     echo 'Регистрация успешно завершена.<br>user '.$_POST['name'].' was register';
-    $registerQuery = 'INSERT into users SET us_name = "' .$_POST['name'] .'", us_password = "' .$_POST['password'].'";';
+    $registerQuery = 'INSERT into users SET us_name = "' .mb_strtolower($_POST['name']) .'", us_password = "' .$_POST['password'].'";';
     $results = mysqli_query($link, $registerQuery);
 }
 
